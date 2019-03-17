@@ -26,16 +26,16 @@ try {
     $mail->SMTPDebug = 0;                                 // Enable verbose debug output
     $mail->isSMTP();
     $mail->Timeout = 60;                                      // Set mailer to use SMTP
-    $mail->Host = 'mailout.one.com';  // Specify main and backup SMTP servers
+    $mail->Host = '';  // Specify main and backup SMTP servers
     $mail->SMTPAuth = true;                               // Enable SMTP authentication
-    $mail->Username = 'slepzs@heidework.com';                 // SMTP username
-    $mail->Password = 'Px4z2n5h6s1.';                           // SMTP password
+    $mail->Username = '';                 // SMTP username
+    $mail->Password = '.';                           // SMTP password
     $mail->SMTPSecure = 'STARTTLS';                            // Enable TLS encryption, `ssl` also accepted
-    $mail->Port = 587;                                    // TCP port to connect to
+    $mail->Port = ;                                    // TCP port to connect to
 
 
     //Recipients
-    $mail->setFrom('slepzs@heidework.com', 'Tobias Heide');
+    $mail->setFrom('', '');
     $mail->addAddress($email);     // Add a recipient
 
 
